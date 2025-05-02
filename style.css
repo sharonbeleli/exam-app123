@@ -13,3 +13,47 @@ article{background:#fff;border-radius:10px;padding:1rem;box-shadow:0 2px 6px rgb
 .subscribe input{padding:.5rem 1rem;border:1px solid #ccc;border-radius:6px;min-width:220px}
 .subscribe button{background:#0d47a1;color:#fff;border:none;padding:.5rem 1.25rem;border-radius:6px;cursor:pointer}
 footer{background:#0d47a1;color:#fff;text-align:center;padding:1rem;margin-top:3rem}
+/* ❶ כפתור ראשי אחיד */
+.btn-primary,
+.read-more.btn-primary{
+  display:inline-block;
+  background:var(--primary);
+  color:#fff;
+  padding:.6rem 1.2rem;
+  border-radius:var(--radius);
+  text-decoration:none;
+  transition:background .2s;
+}
+.btn-primary:hover{background:var(--accent)}
+/* אם יש read-more שלא קיבלו מחלקה – כאן נעשה Override */
+.read-more{background:var(--primary);color:#fff;border-radius:var(--radius)}
+
+/* ❷ וִידג'ט צ'אט */
+#chat-widget{
+  position:fixed;
+  left:1rem;
+  bottom:1rem;
+  z-index:1000;
+}
+#chat-toggle{
+  width:56px;height:56px;
+  border:none;border-radius:50%;
+  background:var(--primary);
+  color:#fff;font-size:24px;cursor:pointer;
+  box-shadow:0 2px 6px rgba(0,0,0,.25);
+}
+#chat-box{
+  display:none;
+  flex-direction:column;
+  gap:.5rem;
+  background:#fff;
+  border-radius:var(--radius);
+  box-shadow:0 2px 12px rgba(0,0,0,.15);
+  padding:1rem;
+  margin-bottom:.5rem;
+}
+#chat-box a{
+  color:var(--primary);
+  text-decoration:none;
+}
+#chat-box a:hover{color:var(--accent)}
