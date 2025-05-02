@@ -1,70 +1,141 @@
-
+<!-- ======================= HTML (index.html) ======================= -->
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>FixMind | מאמרים טכניים</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- HERO -->
   <header class="hero">
     <h1>מאמרים טכניים אמיתיים. מהשטח.</h1>
     <p>ידע הנדסי בעברית – תחזוקה, מכונות, בקרה ואנרגיה.</p>
-    <a href="#articles" class="btn-primary">עיין בכל המאמרים</a>
+    <a href="#articles" class="btn-primary">לעיין בכל המאמרים</a>
   </header>
 
-  <!-- Category filter -->
+  <!-- FILTER NAV -->
   <nav class="categories" id="filters">
     <button data-cat="all" class="active">הכול</button>
     <button data-cat="maintenance">תחזוקה</button>
     <button data-cat="energy">אנרגיה</button>
     <button data-cat="control">בקרה</button>
+    <button data-cat="projects">פרויקטים</button>
   </nav>
 
-  <!-- Articles -->
+  <!-- ARTICLES GRID -->
   <section id="articles" class="grid">
+    <!-- דוגמת 10 כרטיסי מאמר -->
     <article data-cat="maintenance">
       <h2>למה תחזוקה מונעת לא עובדת – ומה כן</h2>
       <p>ניתוח כשל, KPI קריטיים וגישה ישימה לשטח.</p>
-      <a href="#" class="read-more">קרא עוד</a>
+      <button class="btn-primary read-more">קרא עוד</button>
+      <div class="hidden-content">
+        <p>מאמר מלא על שילוב אחזקה חזויה, בחירת חיישנים והורדת תקלות ב‑25%.</p>
+      </div>
+    </article>
+
+    <article data-cat="maintenance">
+      <h2>מודל RCM בקצרה: 6 צעדים ליישום</h2>
+      <p>Reliability‑Centered Maintenance בלי כאבי ראש.</p>
+      <button class="btn-primary read-more">קרא עוד</button>
+      <div class="hidden-content">
+        <p>פירוט שיטת RCM, סקר ציוד קריטי וטמפלט החלטה.</p>
+      </div>
     </article>
 
     <article data-cat="energy">
-      <h2>ניהול אנרגטי חכם במפעל – מדריך קצר</h2>
-      <p>שלושת הצעדים שמצמצמים 12% מצריכת החשמל בשנה.</p>
-      <a href="#" class="read-more">קרא עוד</a>
+      <h2>ניהול אנרגיה – שלושת הצעדים שמורידים 12% חשמל</h2>
+      <p>בדיקות עומס, תמחור חוזי חשמל ואופטימיזציית מנועים.</p>
+      <button class="btn-primary read-more">קרא עוד</button>
+      <div class="hidden-content">
+        <p>Case‑study במפעל מזון: חסכון 1.1 מ׳ ₪ בשנה.</p>
+      </div>
     </article>
 
+    <article data-cat="energy">
+      <h2>מערכות קיטור – מדוע לחץ עודף יקר לך כסף</h2>
+      <p>כיוון שסתומים, ניקוז וקונדנסט.</p>
+      <button class="btn-primary read-more">קרא עוד</button>
+      <div class="hidden-content"><p>נוהל בדיקות לחץ &amp; חישוב ROI.</p></div>
+    </article>
 
-    <!-- עוד כרטיסיות מאמר -->
+    <article data-cat="control">
+      <h2>בחירת רובוט ‑ 5 טעויות יקרות</h2>
+      <p>מהנדס בקרה מסביר איך לא לזרוק מיליון לפח.</p>
+      <button class="btn-primary read-more">קרא עוד</button>
+      <div class="hidden-content"><p>צ׳קליסט דרישות, EOAT וניתוח Takt‑Time.</p></div>
+    </article>
+
+    <article data-cat="control">
+      <h2>SCADA לעומת IIoT – איך לבחור נכון?</h2>
+      <p>סקירת יתרונות, מגבלות ועלויות.</p>
+      <button class="btn-primary read-more">קרא עוד</button>
+      <div class="hidden-content"><p>מפת דרכים למיגרציה הדרגתית.</p></div>
+    </article>
+
+    <article data-cat="projects">
+      <h2>פרויקט TK עד 100 מ׳ ₪ – מתודולוגיית תמחור</h2>
+      <p>פירוק סקופים, אומדן סיכונים והצעות קבלנים.</p>
+      <button class="btn-primary read-more">קרא עוד</button>
+      <div class="hidden-content"><p>טמפלט Excel ל‑WBS מלא.</p></div>
+    </article>
+
+    <article data-cat="projects">
+      <h2>איך לבחור ספק משאבות בלי להתחתן עם המחיר הנמוך</h2>
+      <p>משולש מהיר–זול–איכותי: פרקטיקה.</p>
+      <button class="btn-primary read-more">קרא עוד</button>
+      <div class="hidden-content"><p>דוגמת RFI ומטריצת שקלול.</p></div>
+    </article>
+
+    <article data-cat="maintenance">
+      <h2>5 כלי AI לפירוק Root‑Cause בדקה</h2>
+      <p>GPT בשירות תחזוקה – מדריך מהיר.</p>
+      <button class="btn-primary read-more">קרא עוד</button>
+      <div class="hidden-content"><p>Prompt‑Library להנדסים, כולל JSON‑Schema.</p></div>
+    </article>
+
+    <article data-cat="projects">
+      <h2>מכרז EPC: 7 סעיפים שחייבים להיות בחוזה</h2>
+      <p>כיסוי אחריות, Liquidated Damages ועוד.</p>
+      <button class="btn-primary read-more">קרא עוד</button>
+      <div class="hidden-content"><p>צ׳קליסט PDF להורדה.</p></div>
+    </article>
   </section>
 
-  <!-- Join form -->
+  <!-- SUBSCRIBE -->
   <section class="subscribe">
     <h3>רוצה לקבל מאמר חדש כל שבוע?</h3>
     <form action="https://your-mailchimp-endpoint" method="post" target="_blank">
-      <input type="email" name="EMAIL" placeholder="הכנס כתובת אימייל" required>
-      <button type="submit">צרף אותי</button>
+      <input type="email" name="EMAIL" placeholder="הכנס כתובת אימייל" required />
+      <button type="submit" class="btn-primary">צרף אותי</button>
     </form>
   </section>
-<!-- ❶ כפתורי “קרא עוד” קיימים? החלף להם את המחלקה ל‑btn-primary -->
-<!--   <a href="#" class="read-more btn-primary">קרא עוד</a> -->
 
-<!-- ❷ וידג'ט צ’אט קבוע -->
-<div id="chat-widget">
-  <button id="chat-toggle" aria-label="פתח ייעוץ">&#128172;</button>
-
-  <div id="chat-box">
-    <h4>התייעצות מהירה</h4>
-    <a href="https://wa.me/972501234567" target="_blank">WhatsApp</a>
-    <a href="https://m.me/yourpage" target="_blank">Messenger</a>
-    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-  </div>
-</div>
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 FixMind – כל הזכויות שמורות.</p>
+    <p>© 2025 FixMind – כל הזכויות שמורות.</p>
   </footer>
+
+  <!-- CHAT WIDGET -->
+  <div id="chat-widget">
+    <button id="chat-toggle" aria-label="פתח ייעוץ">💬</button>
+    <div id="chat-box">
+      <h4>יש לך שאלה?</h4>
+      <a href="https://wa.me/972501234567" target="_blank">WhatsApp</a>
+      <a href="https://m.me/yourpage" target="_blank">Messenger</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- MODAL POPUP -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
