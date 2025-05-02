@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>FixMind | מאמרים טכניים</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>מאמרים טכניים אמיתיים. מהשטח.</h1>
+    <p>ידע הנדסי בעברית – תחזוקה, מכונות, בקרה ואנרגיה.</p>
+    <a href="#articles" class="btn-primary">עיין בכל המאמרים</a>
+  </header>
+
+  <!-- Category filter -->
+  <nav class="categories" id="filters">
+    <button data-cat="all" class="active">הכול</button>
+    <button data-cat="maintenance">תחזוקה</button>
+    <button data-cat="energy">אנרגיה</button>
+    <button data-cat="control">בקרה</button>
+  </nav>
+
+  <!-- Articles -->
+  <section id="articles" class="grid">
+    <article data-cat="maintenance">
+      <h2>למה תחזוקה מונעת לא עובדת – ומה כן</h2>
+      <p>ניתוח כשל, KPI קריטיים וגישה ישימה לשטח.</p>
+      <a href="#" class="read-more">קרא עוד</a>
+    </article>
+
+    <article data-cat="energy">
+      <h2>ניהול אנרגטי חכם במפעל – מדריך קצר</h2>
+      <p>שלושת הצעדים שמצמצמים 12% מצריכת החשמל בשנה.</p>
+      <a href="#" class="read-more">קרא עוד</a>
+    </article>
+
+    <!-- עוד כרטיסיות מאמר -->
+  </section>
+
+  <!-- Join form -->
+  <section class="subscribe">
+    <h3>רוצה לקבל מאמר חדש כל שבוע?</h3>
+    <form action="https://your-mailchimp-endpoint" method="post" target="_blank">
+      <input type="email" name="EMAIL" placeholder="הכנס כתובת אימייל" required>
+      <button type="submit">צרף אותי</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 FixMind – כל הזכויות שמורות.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
